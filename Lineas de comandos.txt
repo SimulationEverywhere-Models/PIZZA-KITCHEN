@@ -1,0 +1,21 @@
+Para probar un lugar:
+./simu -elugar.tst -mlugar.ma -lmessage.txt -olugar.txt
+
+Para probar la cola:
+./simu -ecola.tst -mcola.ma -lmessage.txt -ocola.txt
+
+Para probar el horno:
+./simu -ehorno.tst -mhorno.ma -lmessage.txt -ohorno.txt
+
+Pruebas de la pizzeria:
+Con un solo pedido:
+./simu -epizz1.tst -mpizzeria.ma -lmessage.txt -opizzeria.txt -t00:10:00:000
+
+Con dos pedidos:
+./simu -epizz2.tst -mpizzeria.ma -lmessage.txt -opizzeria.txt -t00:15:00:000
+
+Muchos pedidos en distintos momentos:
+./simu -epizzeria.tst -mpizzeria.ma -lmessage.txt -opizzeria.txt -t01:30:00:000
+
+Muchos pedidos en horas pico:
+./simu -epizze3.tst -mpizzeria.ma -lmessage.txt -opizzeria.txt -t14:00:00:000
